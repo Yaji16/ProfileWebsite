@@ -1,0 +1,202 @@
+/* body background color is set and the margin default of 8px and padding is removed and text is aligned to center */
+body{
+  color: #40515E;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* heading designs*/
+h1{
+  margin: 50px auto 0 auto ;/*2.5rem*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  color: #66BFBF;
+  font-weight: normal;
+
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #66BFBF;
+  padding-bottom: 10px;
+}
+h3{
+  font-family: 'Raleway', sans-serif;
+  color: #11999E;
+}
+
+/* styling the horizntal rules as dotted short dividers */
+hr{
+
+  border:10px dotted #EAF6F6;
+  border-bottom: none;
+  width: 10%;
+  margin: 100px auto;
+}
+p{
+  line-height: 2;
+}
+
+a{
+  color: #11999E;
+  margin: 10px 20px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+/* top-container design */
+.title{
+  font-weight: normal;
+
+}
+.intro-line{
+  display: flex;
+  justify-content: center;
+}
+.typing{
+  position: relative;
+  margin-left: 10px;
+}
+.typing::after{   /*typing animation*/
+  content: "";
+  position: absolute;
+  width:1px;
+  height:80%;
+  border-right: 2px solid #66BFBF;
+  animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+.desi{
+  text-decoration: underline;
+}
+/* position relative means to change the position relative to the original image */
+.top-container{
+  background-color: #d3f6f3;
+  min-height: 100%;
+  position:relative;
+  padding: 100px 0 300px;
+}
+/* position absolute removes the element from flow of the document and can move it freely */
+.top-cloud{
+  position:absolute;
+  right:18.75%;
+  top: 3.6%;
+}
+.bottom-cloud{
+  position: absolute;
+  left: 18.75%;
+  bottom: 18.75%;
+}
+.plane {
+  width: 8%;
+  position: absolute;
+  right: 22%;
+  top: 60%;
+}
+
+/* middle container design */
+
+.middle-container{
+  padding: 100px 0;
+}
+.intro{
+  width: 30%;
+  margin: auto;
+
+}
+.profile-img{
+  width: 20%;
+}
+/* skill, work and project section design */
+.skill-row, .project-row, .work-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+.computer-img, .sql-img, .isl-img, .website-img {
+  width: 25%;
+  float:left;
+  margin-right: 30px;
+}
+.illustrator-img, .webdev-img, .prison-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.prison-img {
+  width: 20%;
+}
+.website-img {
+  width: 40%;
+}
+
+/* contact me section design */
+.contact-me {
+  width: 60%;
+  margin: 100px auto;
+}
+.btn {
+   background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 20px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin: 50px auto;
+}
+
+.btn:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+/* bottom container design */
+.bottom-container{
+  background-color: #66BFBF;
+  margin-bottom: 0;
+  padding: 50px 0 20px;
+}
+.bottom-container > p {
+  color: #EAF6F6;
+  font-size: 0.85rem;
+  padding: 20px 0;
+}
+/* end */
